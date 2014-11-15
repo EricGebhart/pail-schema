@@ -10,19 +10,28 @@
 
 ; pull in clj-pail and pail-cascalog core functionality.
 (pt/import-vars [clj-pail-tap.core
-                    list-taps
-                    tap-map
-                    object-seq
-                    spec
-                    pail
-                    with-snapshot
-                    create
-                    find-or-create
-                    write-objects]
+                 list-taps
+                 tap-map
+                 object-seq
+                 spec
+                 pail
+                 with-snapshot
+                 create
+                 find-or-create
+                 absorb
+                 snapshot
+                 delete-snapshot
+                 copy-append
+                 move-append
+                 consolidate
+                 delete
+                 pail-is-empty?
+                 pail-exists?
+                 write-objects]
                 [pail-cascalog.core
-                    pail->tap
-                    tap-options
-                    tap])
+                 pail->tap
+                 tap-options
+                 tap])
 
 (defn get-tap
   "Creates a `PailTap` from an existing vertically partitioned pail, by selecting an

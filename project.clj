@@ -18,7 +18,7 @@
                  [prismatic/schema "0.2.0"]
                  [pail-cascalog "0.1.0"]]
 
-  :aot [pail-schema.data-unit-pail-structure]
+  ;:aot [pail-schema.data-unit-pail-structure]
 
   :profiles {:1.3 {:dependencies [[org.clojure/clojure "1.3.0"]]}
              :1.4 {:dependencies [[org.clojure/clojure "1.4.0"]]}
