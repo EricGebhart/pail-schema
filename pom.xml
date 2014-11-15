@@ -3,7 +3,7 @@
   <groupId>pail-schema</groupId>
   <artifactId>pail-schema</artifactId>
   <packaging>jar</packaging>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <name>pail-schema</name>
   <description>Library for using Prismatic Schema, Pail and Cascalog.</description>
   <url>http://github.com/EricGebhart/</url>
@@ -16,7 +16,8 @@
   <scm>
     <connection>scm:git:git://github.com/EricGebhart/pail-schema.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/EricGebhart/pail-schema.git</developerConnection>
-    <tag>f6beeda50c3a6e13d79850c9af1188e68dd5de01</tag>
+    <tag>8c428dbbbe6eea602212a88e585b43d6454dec3a
+</tag>
     <url>https://github.com/EricGebhart/pail-schema</url>
   </scm>
   <build>
@@ -35,13 +36,14 @@
         <directory>resources</directory>
       </testResource>
     </testResources>
-    <directory>target/</directory>
+    <directory>target</directory>
     <outputDirectory>target/classes</outputDirectory>
+    <plugins/>
   </build>
   <repositories>
     <repository>
       <id>central</id>
-      <url>http://repo1.maven.org/maven2/</url>
+      <url>https://repo1.maven.org/maven2/</url>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
@@ -89,7 +91,7 @@
     <dependency>
       <groupId>clj-pail-tap</groupId>
       <artifactId>clj-pail-tap</artifactId>
-      <version>0.1.1</version>
+      <version>0.1.2</version>
     </dependency>
     <dependency>
       <groupId>pail-fressian</groupId>
@@ -107,21 +109,33 @@
       <version>0.1.0</version>
     </dependency>
     <dependency>
-      <groupId>midje</groupId>
-      <artifactId>midje</artifactId>
-      <version>1.5.1</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>org.clojure</groupId>
       <artifactId>tools.nrepl</artifactId>
-      <version>0.2.3</version>
+      <version>0.2.6</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.clojure</groupId>
+          <artifactId>clojure</artifactId>
+        </exclusion>
+      </exclusions>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>clojure-complete</groupId>
       <artifactId>clojure-complete</artifactId>
       <version>0.2.3</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.clojure</groupId>
+          <artifactId>clojure</artifactId>
+        </exclusion>
+      </exclusions>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>midje</groupId>
+      <artifactId>midje</artifactId>
+      <version>1.5.1</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

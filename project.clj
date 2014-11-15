@@ -1,4 +1,4 @@
-(defproject pail-schema "0.1.1"
+(defproject pail-schema "0.1.2"
   :description "Library for using Prismatic Schema, Pail and Cascalog."
   :url "http://github.com/EricGebhart/"
   :license {:name "Eclipse Public License"
@@ -13,7 +13,7 @@
                  [org.apache.hadoop/hadoop-core "1.2.0" ]
                  [potemkin "0.3.4"]
                  [cascalog "2.0.0" ]
-                 [clj-pail-tap "0.1.1"]
+                 [clj-pail-tap "0.1.2"]
                  [pail-fressian "0.1.2"]
                  [prismatic/schema "0.2.0"]
                  [pail-cascalog "0.1.0"]]
