@@ -33,6 +33,15 @@
                  tap-options
                  tap])
 
+(defn writer [pail]
+  (.openWrite pail))
+
+(defn close [writer]
+  (.close writer))
+
+(defn write [writer o]
+  (.writeObject writer o))
+
 (defn get-tap
   "Creates a `PailTap` from an existing vertically partitioned pail, by selecting an
    entry from the Pail's tap map. Takes a pail connection. returns nil if no tap found."

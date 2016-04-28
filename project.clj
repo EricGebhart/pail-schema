@@ -1,4 +1,4 @@
-(defproject pail-schema "0.1.2"
+(defproject pail-schema "0.1.3"
   :description "Library for using Prismatic Schema, Pail and Cascalog."
   :url "http://github.com/EricGebhart/"
   :license {:name "Eclipse Public License"
